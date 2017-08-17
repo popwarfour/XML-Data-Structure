@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Demo Project
 //
-//  Created by Jordan Rouille on 8/17/17.
+//  Created by Anders Melen on 8/17/17.
 //  Copyright © 2017 Anders Melen. All rights reserved.
 //
 
@@ -20,6 +20,4 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
 }
-

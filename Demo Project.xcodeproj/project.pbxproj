@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF61DA671F46308900BDE9DA /* XMLElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61DA661F46308900BDE9DA /* XMLElement.swift */; };
+		DF61DA691F4645A100BDE9DA /* XMLAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61DA681F4645A100BDE9DA /* XMLAttribute.swift */; };
+		DF61DA6B1F4645CA00BDE9DA /* XMLPrintable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61DA6A1F4645CA00BDE9DA /* XMLPrintable.swift */; };
+		DF61DA6D1F46468800BDE9DA /* XMLObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61DA6C1F46468800BDE9DA /* XMLObject.swift */; };
 		DF7A25661F46244200D3DA60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A25651F46244200D3DA60 /* AppDelegate.swift */; };
 		DF7A25681F46244200D3DA60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A25671F46244200D3DA60 /* ViewController.swift */; };
 		DF7A256B1F46244200D3DA60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7A25691F46244200D3DA60 /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF61DA661F46308900BDE9DA /* XMLElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLElement.swift; sourceTree = "<group>"; };
+		DF61DA681F4645A100BDE9DA /* XMLAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLAttribute.swift; sourceTree = "<group>"; };
+		DF61DA6A1F4645CA00BDE9DA /* XMLPrintable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLPrintable.swift; sourceTree = "<group>"; };
+		DF61DA6C1F46468800BDE9DA /* XMLObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLObject.swift; sourceTree = "<group>"; };
 		DF7A25621F46244200D3DA60 /* Demo Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF7A25651F46244200D3DA60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF7A25671F46244200D3DA60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +43,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF61DA651F462FD900BDE9DA /* XML */ = {
+			isa = PBXGroup;
+			children = (
+				DF61DA661F46308900BDE9DA /* XMLElement.swift */,
+				DF61DA681F4645A100BDE9DA /* XMLAttribute.swift */,
+				DF61DA6C1F46468800BDE9DA /* XMLObject.swift */,
+				DF61DA6E1F4646CC00BDE9DA /* Protocols */,
+			);
+			name = XML;
+			sourceTree = "<group>";
+		};
+		DF61DA6E1F4646CC00BDE9DA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DF61DA6A1F4645CA00BDE9DA /* XMLPrintable.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		DF61DA6F1F4646DB00BDE9DA /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				DF7A25671F46244200D3DA60 /* ViewController.swift */,
+				DF7A25691F46244200D3DA60 /* Main.storyboard */,
+				DF7A256C1F46244200D3DA60 /* Assets.xcassets */,
+				DF7A256E1F46244200D3DA60 /* LaunchScreen.storyboard */,
+				DF7A25711F46244200D3DA60 /* Info.plist */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
 		DF7A25591F46244200D3DA60 = {
 			isa = PBXGroup;
 			children = (
@@ -55,11 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				DF7A25651F46244200D3DA60 /* AppDelegate.swift */,
-				DF7A25671F46244200D3DA60 /* ViewController.swift */,
-				DF7A25691F46244200D3DA60 /* Main.storyboard */,
-				DF7A256C1F46244200D3DA60 /* Assets.xcassets */,
-				DF7A256E1F46244200D3DA60 /* LaunchScreen.storyboard */,
-				DF7A25711F46244200D3DA60 /* Info.plist */,
+				DF61DA651F462FD900BDE9DA /* XML */,
+				DF61DA6F1F4646DB00BDE9DA /* Other */,
 			);
 			path = "Demo Project";
 			sourceTree = "<group>";
@@ -96,6 +132,7 @@
 				TargetAttributes = {
 					DF7A25611F46244200D3DA60 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = YG48NVRHYK;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,7 +174,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF7A25681F46244200D3DA60 /* ViewController.swift in Sources */,
+				DF61DA671F46308900BDE9DA /* XMLElement.swift in Sources */,
+				DF61DA6D1F46468800BDE9DA /* XMLObject.swift in Sources */,
+				DF61DA691F4645A100BDE9DA /* XMLAttribute.swift in Sources */,
 				DF7A25661F46244200D3DA60 /* AppDelegate.swift in Sources */,
+				DF61DA6B1F4645CA00BDE9DA /* XMLPrintable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,9 +301,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YG48NVRHYK;
 				INFOPLIST_FILE = "Demo Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.anders.melen.demo.Demo-Project";
+				PRODUCT_BUNDLE_IDENTIFIER = com.anders.melen.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -272,9 +314,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YG48NVRHYK;
 				INFOPLIST_FILE = "Demo Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.anders.melen.demo.Demo-Project";
+				PRODUCT_BUNDLE_IDENTIFIER = com.anders.melen.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -299,6 +342,7 @@
 				DF7A25761F46244200D3DA60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
